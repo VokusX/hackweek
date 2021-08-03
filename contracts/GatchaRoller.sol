@@ -41,7 +41,8 @@ contract GatchaRoller {
     constructor() {
         minter = msg.sender;
         // mint the NFTs and give them to "this"
-        GatchaNFT.mint(msg.sender, _tokenId, _uri);
+        GatchaNFT nft;
+        nft.mint(msg.sender, 0, "test");
     }
 
     // Sends an amount of newly created coins to an address
