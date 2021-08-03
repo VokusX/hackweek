@@ -1,0 +1,15 @@
+{
+  "name": "nft-gatcha",
+  "version": "1.0.0",
+  "description": "Simple dapp for testing Amazon Managed Blockchain",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Voicu",
+  "license": "ISC",
+  "dependencies": {
+    "web3": "^1.3.5",
+    "@aws/web3-http-provider": "^1.0.1"
+  }
+}
