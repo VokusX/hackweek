@@ -35,13 +35,14 @@ contract GatchaRoller {
     address public minter;
     mapping(address => uint256) public balances;
     mapping(address => string[]) public nfts;
+    GatchaNFT private nft;
 
     // Constructor code is only run when the contract
     // is created
     constructor() {
         minter = msg.sender;
         // mint the NFTs and give them to "this"
-        GatchaNFT nft;
+        nft = GatchaNFT(msg.sender);
         nft.mint(msg.sender, 0, "test");
     }
 
